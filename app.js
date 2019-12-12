@@ -2,7 +2,7 @@ function onReady() {
   let toDos = [];
   let toDoId = 1;
   const ADD_TODO_FORM = document.getElementById('addToDoForm');
-  const NEW_TODO_FORM = document.getElementById('newToDoText');
+  const NEW_TODO_TEXT = document.getElementById('newToDoText');
   const TODO_LIST = document.getElementById('toDoList');
 
   ADD_TODO_FORM.addEventListener('submit', (event) => {
@@ -12,7 +12,7 @@ function onReady() {
     let title = NEW_TODO_TEXT.value;
     let todoObj = {
       name: title,
-      id: toDoID
+      id: toDoId
     }
 
     toDoId++;
@@ -55,7 +55,7 @@ function onReady() {
     newLi.appendChild(deleteBtn);
 
     // attach the li to the ul //
-    TO_DO_LIST.appendChild(newLi);
+    TODO_LIST.appendChild(newLi);
 
     //empty the input
     NEW_TO_DO_TEXT.value = '';
