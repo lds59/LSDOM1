@@ -32,6 +32,8 @@ function onReady() {
     let deleteBtn = document.createElement('button');
     deleteBtn.textContent = "Delete";
 
+    deleteBtn.className += "mdl-button mdl-js-button mdl-button--accent";
+
     deleteBtn.addEventListener('click', function(event){
       let buttonLiText = this.parentElement.childNodes[0].textContent;
 
